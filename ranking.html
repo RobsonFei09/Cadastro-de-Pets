@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ranking de Animais</title>
+  <link rel="stylesheet" href="src/css/ranking-style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <h1>Ranking de Animais</h1>
+
+  <!-- Filtro de ordenação -->
+  <label for="sort-criteria">Ordenar por:</label>
+  <select id="sort-criteria">
+    <option value="weight">Peso</option>
+    <option value="height">Altura</option>
+    <option value="age">Idade</option>
+  </select>
+
+  <!-- Filtro por tipo de animal -->
+  <label for="animal-type-filter" style="text-align: center; display: block;">Filtrar por tipo:</label>
+  <select id="animal-type-filter">
+    <option value="Todos">Todos</option>
+    <option value="Cachorro">Cachorro</option>
+    <option value="Gato">Gato</option>
+    <option value="Porco">Porco</option>
+    <option value="Cabra">Cabra</option>
+    <option value="Bode">Bode</option>
+    <option value="Coelho">Coelho</option>
+    <option value="Tartaruga">Tartaruga</option>
+    <option value="Esquilo">Esquilo</option>
+    <option value="Hamster">Hamster</option>
+    <option value="Peixe">Peixe</option>
+    <option value="Macaco">Macaco</option>
+  </select>
+
+  <!-- Container com lista e ranking -->
+  <div class="container">
+    <!-- Lista de todos os animais -->
+    <div class="box">
+      <h2>Lista de Animais</h2>
+      <ul id="animal-list"></ul>
+    </div>
+
+    <!-- Ranking dos animais -->
+    <div class="box">
+      <ul id="ranking-list" class="ranking-cards"></ul>
+    </div>
+  </div>
+
+  <!-- Medalha decorativa -->
+  <span class="medal">🥇</span>
+
+  <!-- Script principal -->
+  <script src="src/js/ranking-script.js"></script>
+
+</body>
+</html>

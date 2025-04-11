@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro de Pet</title>
+  <link rel="stylesheet" href="src/css/style.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h1>Cadastre seu Pet!</h1>
+
+    <!-- Formulário de cadastro de pet -->
+    <form id="pet-form">
+
+      <!-- Dados do responsável -->
+      <label for="name">Nome do Responsável:</label>
+      <input type="text" id="name" name="name" required />
+
+      <!-- Dados do pet -->
+      <label for="pet-name">Nome do Pet:</label>
+      <input type="text" id="pet-name" name="pet-name" required />
+
+      <label for="age">Idade do Pet (em anos):</label>
+      <input type="number" id="age" name="age" min="0" required />
+
+      <label for="animal-type">Tipo de Animal:</label>
+      <select id="animal-type" name="animal-type" required>
+        <option value="" disabled selected>Escolha o tipo</option>
+        <!-- Lista de tipos de animais -->
+        <option value="Cachorro">Cachorro</option>
+        <option value="Gato">Gato</option>
+        <option value="Pássaro">Pássaro</option>
+        <option value="Porco">Porco</option>
+        <option value="Cabra">Cabra</option>
+        <option value="Bode">Bode</option>
+        <option value="Coelho">Coelho</option>
+        <option value="Tartaruga">Tartaruga</option>
+        <option value="Esquilo">Esquilo</option>
+        <option value="Hamster">Hamster</option>
+        <option value="Peixe">Peixe</option>
+        <option value="Macaco">Macaco</option>
+      </select>
+
+      <label for="animal-weight">Peso do Pet (kg):</label>
+      <input type="number" id="animal-weight" name="animal-weight" required />
+
+      <label for="animal-height">Altura do Pet (cm):</label>
+      <input type="number" id="animal-height" name="animal-height" required />
+
+      <!-- Gênero do pet -->
+      <label for="gender">Gênero do Pet:</label>
+      <div class="radio-group">
+        <input type="radio" id="male" name="gender" value="Masculino" required />
+        <label for="male">Masculino</label>
+        <br />
+        <input type="radio" id="female" name="gender" value="Feminino" required />
+        <label for="female">Feminino</label>
+      </div>
+
+      <!-- Upload de imagem do pet -->
+      <label for="image-pet">Adicione a foto do seu animal:</label>
+      <input type="file" id="image-pet" hidden />
+      <label for="image-pet" class="custom-file-upload">Selecionar imagem</label>
+
+      <!-- Botão de envio -->
+      <br />
+      <button type="submit">Cadastrar</button>
+    </form>
+
+    <!-- Área para exibir resultado após cadastro -->
+    <div id="result"></div>
+  </div>
+
+  <!-- Script principal -->
+  <script src="src/js/script.js"></script>
+</body>
+</html>
