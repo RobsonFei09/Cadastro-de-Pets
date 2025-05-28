@@ -5,7 +5,7 @@ body {
     height: 100vh;
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
-    background-image: url('assets/6b23274048dbd3db9c9ce2a122f3c84f.jpg');
+    background-image: url('../../assets/6b23274048dbd3db9c9ce2a122f3c84f.jpg'');
     background-attachment: fixed;
     display: flex;
     justify-content: flex-end; /* Alinha o formulário à direita */
