@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Lista fixa de animais pré-cadastrados
     const registeredPets = [
-        { petName: "Rex", owner: "João", type: "Cachorro", age: 5, weight: 17, height: 25, image: "../src/assets/image/rex_pet.png" },
+        { petName: "Rex", owner: "João", type: "Cachorro", age: 5, weight: 17, height: 25, image: "./src/assets/image/rex_pet.png" },
         { petName: "Bichano", owner: "Ana", type: "Gato", age: 3, weight: 4, height: 25, image: "/src/assets/image/bichano_pet.png" },
         { petName: "Piupiu", owner: "Carlos", type: "Pássaro", age: 2, weight: 0.4, height: 15, image: "/src/assets/image/piupiu_pet.png" },
         { petName: "Miau", owner: "Jorge", type: "Gato", age: 7, weight: 5, height: 35, image: "/src/assets/image/miau_pet.png" },
